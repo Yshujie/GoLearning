@@ -2,12 +2,12 @@ package hungrySingleton
 
 import "fmt"
 
-type person struct {
-	Name string
-	Sex string
-	Age int
+type Person struct {
+	name string
+	sex  string
+	age  int
 }
 
-func (p person) Greet() {
-	fmt.Println("Hi~ There is hungry singleton. My name is %s, I'm %s age years old", p.Name, p.Age)
+func (p Person) Greet() {
+	fmt.Println("Hi~ There is hungry singleton. My name is ", p.name, ", I'm", p.age, " years old, and I'm a ", p.sex)
 }

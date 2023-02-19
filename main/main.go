@@ -3,12 +3,20 @@ package main
 import (
 	"GoLearning/case/hello"
 	"GoLearning/case/pointer"
+	hungrySingleton "GoLearning/case/singleton"
 )
 
 func main() {
 
-	pointerTest()
+	singletonTest()
 
+}
+
+// 测试单例模式
+func singletonTest() {
+	var person = hungrySingleton.GetInsOr()
+
+	person.Greet()
 }
 
 // 跑通 hello world
