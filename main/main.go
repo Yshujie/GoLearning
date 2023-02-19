@@ -4,12 +4,19 @@ import (
 	"GoLearning/case/hello"
 	"GoLearning/case/pointer"
 	hungrySingleton "GoLearning/case/singleton/hungry"
+	"fmt"
 )
 
 func main() {
 
-	singletonTest()
+	printTest()
 
+	helloWorldTest()
+
+}
+
+func printTest() {
+	fmt.Println("test print something. main package needs to import fmt package, event if the fmt package has already imported by hello package")
 }
 
 // 测试单例模式
