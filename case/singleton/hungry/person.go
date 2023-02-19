@@ -1,4 +1,4 @@
-package hungrySingleton
+package hungry
 
 import "fmt"
 

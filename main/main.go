@@ -3,7 +3,7 @@ package main
 import (
 	"GoLearning/case/hello"
 	"GoLearning/case/pointer"
-	hungrySingleton "GoLearning/case/singleton"
+	hungrySingleton "GoLearning/case/singleton/hungry"
 )
 
 func main() {
