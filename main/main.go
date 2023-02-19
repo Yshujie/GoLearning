@@ -9,6 +9,8 @@ func main() {
 
 	printTest()
 
+	helloTest()
+
 }
 
 func printTest() {
