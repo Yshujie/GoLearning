@@ -1,22 +1,15 @@
 package main
 
-import (
-	"fmt"
-	"github.com/GoLearning/case/hello"
-)
+import lazy_unsafety "github.com/GoLearning/case/singleton/lazy.unsafety"
 
 func main() {
 
-	printTest()
-
-	helloTest()
+	lazyUnSafetyTest()
 
 }
 
-func printTest() {
-	fmt.Println("test print something. main package needs to import fmt package, event if the fmt package has already imported by hello package")
-}
+func lazyUnSafetyTest() {
+	var person = lazy_unsafety.GetInsOr()
 
-func helloTest() {
-	hello.Hello()
+	person.Greet()
 }
