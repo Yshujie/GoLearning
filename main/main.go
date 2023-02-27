@@ -1,6 +1,6 @@
 package main
 
-import "github.com/GoLearning/case/dataType/stringDataType"
+import "github.com/GoLearning/case/dataType/stringType"
 
 func main() {
 	testStringDataType()
@@ -8,6 +8,6 @@ func main() {
 
 func testStringDataType() {
 
-	stringDataType.TestQuotes()
+	stringType.TextTraversalChinesString()
 
 }
