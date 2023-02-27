@@ -31,7 +31,7 @@ func Test1() {
 func Test2() {
 	var a int = 1
 	var b *int = &a
-	// var x *string = &a 错误，cannot use &a (value of type *int) as type *string in variable declaration
+	// var x *dataType = &a 错误，cannot use &a (value of type *int) as type *dataType in variable declaration
 	var c string = "1"
 	var d *string = &c
 
