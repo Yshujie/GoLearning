@@ -11,11 +11,21 @@ import "fmt"
 // 返回值列表：result string 类型
 // 函数体：{}
 
-func TestDeclareFunction(argus string) string {
+func TestDeclareFunction1(argus string) string {
 	fmt.Println("There is TestDeclareFunction ")
 	fmt.Println("param: ", argus)
 	result := "result string"
 	fmt.Println("result: ", result)
 
 	return result
+}
+
+func TestDeclareFunction2(argus1 string, argus2 int) (string, int) {
+	fmt.Println("There is TestDeclareFunction2")
+	fmt.Println("In this function, you will get what you give")
+
+	fmt.Println("argus1: ", argus1)
+	fmt.Println("argus2: ", argus2)
+
+	return argus1, argus2
 }
