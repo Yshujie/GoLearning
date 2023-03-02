@@ -1,15 +1,15 @@
 package main
 
-import "github.com/GoLearning/case/factory/simple"
+import "github.com/GoLearning/case/factory/abstract"
 
 func main() {
 
-	testSimpleFactory()
+	testAbstractFactory()
 
 }
 
-func testSimpleFactory() {
-	person := simple.NewPerson("moons", 3)
+func testAbstractFactory() {
+	ai := abstract.NewPerson("Jarvis", 8)
 
-	person.Greet()
+	ai.Greet("I'm your assistant")
 }
