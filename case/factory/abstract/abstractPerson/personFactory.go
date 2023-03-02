@@ -1,4 +1,4 @@
-package abstract
+package abstractPerson
 
 // 工厂模型 -- 抽象工厂
 
