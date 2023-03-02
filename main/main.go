@@ -1,13 +1,15 @@
 package main
 
-import "github.com/GoLearning/case/dataType/stringType"
+import "github.com/GoLearning/case/factory/simple"
 
 func main() {
-	testStringDataType()
+
+	testSimpleFactory()
+
 }
 
-func testStringDataType() {
+func testSimpleFactory() {
+	person := simple.NewPerson("moons", 3)
 
-	stringType.TextTraversalChinesString()
-
+	person.Greet()
 }
