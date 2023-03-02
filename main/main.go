@@ -12,9 +12,18 @@ func main() {
 }
 
 func testFunction() {
-	functionTest.TestDeclareFunction1("Hello")
 
-	result1, result2 := functionTest.TestDeclareFunction2("Hello", 9527)
-	fmt.Println("I got result1: ", result1)
-	fmt.Println("I got result2: ", result2)
+	// 直接传入匿名函数
+	result := functionTest.TestFuncParams(func() int {
+		return 9527
+	})
+
+	fmt.Println("result: ", result)
+
+	result2 := functionTest.TestFormat(func(s string, x, y int) string {
+		return fmt.Sprintf(s, x, y)
+	}, "%d, %d", 10, 20)
+
+	fmt.Println("result2: ", result2)
+
 }
