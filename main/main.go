@@ -7,11 +7,11 @@ import (
 
 func main() {
 
-	testArrayDataType()
+	test2OfArrayDataType()
 
 }
 
-func testArrayDataType() {
+func test1OfArrayDataType() {
 
 	// arrayType 包向外暴露的变量
 	fmt.Println(arrayType.PublicArr)
@@ -26,5 +26,10 @@ func testArrayDataType() {
 	arrayType.Test1()
 
 	fmt.Println(arrayType.PublicArr)
+}
+
+func test2OfArrayDataType() {
+
+	arrayType.Test2()
 
 }

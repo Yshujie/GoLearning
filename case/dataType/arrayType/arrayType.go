@@ -26,3 +26,23 @@ func Test1() {
 
 	PublicArr[0] = 3
 }
+
+func Test2() {
+	arr0 := [3]int{3, 2, 1}
+	a := [3]int{1, 2}
+	b := [...]int{1, 2, 3, 4}
+	c := [5]int{1: 9527, 3: 579}
+	d := [...]struct {
+		name string
+		age  int
+	}{
+		{"Jarvis", 5},
+		{"moons", 2},
+	}
+
+	fmt.Println("arr0: ", arr0)
+	fmt.Println("a: ", a)
+	fmt.Println("b: ", b)
+	fmt.Println("c: ", c)
+	fmt.Println("d: ", d)
+}
