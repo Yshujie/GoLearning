@@ -21,6 +21,7 @@ func Test1() {
 
 	fmt.Println("arr1: ", arr1)
 	fmt.Println("arr2: ", arr2)
+	fmt.Println("arr3: ", arr3)
 	fmt.Println("strArr: ", strArr)
 
 	PublicArr[0] = 3
