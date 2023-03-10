@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	test2OfArrayDataType()
+	test3OfArrayDataType()
 
 }
 
@@ -29,7 +29,9 @@ func test1OfArrayDataType() {
 }
 
 func test2OfArrayDataType() {
-
 	arrayType.Test2()
+}
 
+func test3OfArrayDataType() {
+	arrayType.Test3()
 }
