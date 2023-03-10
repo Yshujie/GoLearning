@@ -2,41 +2,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/GoLearning/case/dataType/arrayType"
+	"github.com/GoLearning/case/concurrent/goroutineTest"
 )
 
 func main() {
-	test5OfArrayDataType()
-}
 
-func test1OfArrayDataType() {
-	// arrayType 包向外暴露的变量
-	fmt.Println(arrayType.PublicArr)
-	fmt.Println(len(arrayType.PublicArr))
-	fmt.Println(arrayType.PublicArr2)
-	fmt.Println(len(arrayType.PublicArr2))
+	// 并发执行程序
+	go goroutineTest.Running()
 
-	// arrayType 包私有的变量
-	// arrayType.arr0 访问不到
-
-	// arrayType 包的函数
-	arrayType.Test1()
-
-	fmt.Println(arrayType.PublicArr)
-}
-
-func test2OfArrayDataType() {
-	arrayType.Test2()
-}
-
-func test3OfArrayDataType() {
-	arrayType.Test3()
-}
-
-func test4OfArrayDataType() {
-	arrayType.Test4()
-}
-
-func test5OfArrayDataType() {
-	arrayType.Test5()
+	// 接收命令行输入
+	var input string
+	fmt.Scanln(&input)
 }
