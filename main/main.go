@@ -6,13 +6,10 @@ import (
 )
 
 func main() {
-
-	test3OfArrayDataType()
-
+	test5OfArrayDataType()
 }
 
 func test1OfArrayDataType() {
-
 	// arrayType 包向外暴露的变量
 	fmt.Println(arrayType.PublicArr)
 	fmt.Println(len(arrayType.PublicArr))
@@ -34,4 +31,12 @@ func test2OfArrayDataType() {
 
 func test3OfArrayDataType() {
 	arrayType.Test3()
+}
+
+func test4OfArrayDataType() {
+	arrayType.Test4()
+}
+
+func test5OfArrayDataType() {
+	arrayType.Test5()
 }

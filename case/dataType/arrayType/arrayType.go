@@ -54,24 +54,75 @@ func Test3() {
 	arr := [...]int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
 
 	fmt.Println(" ---- start: for 循环遍历 ---- ")
-	iterateArrayOfFor(arr)
+	iterateOneArrayOfFor(arr)
 	fmt.Println(" ----  end : for 循环遍历 ---- ")
 
 	fmt.Println(" ---- start: range 循环遍历 ---- ")
-	iterateArrayOfRange(arr)
+	iterateOneArrayOfRange(arr)
 	fmt.Println(" ----  end : range 循环遍历 ---- ")
 }
 
-// 测试 for 循环遍历数组
-func iterateArrayOfFor(arr [10]int) {
+// 测试 for 循环遍历一维数组
+func iterateOneArrayOfFor(arr [10]int) {
 	for i := 0; i < len(arr); i++ {
 		println("index:", i, "; value:", arr[i])
 	}
 }
 
-// 测试 rang 循环遍历数组
-func iterateArrayOfRange(arr [10]int) {
+// 测试 rang 循环遍历一维数组
+func iterateOneArrayOfRange(arr [10]int) {
 	for index, value := range arr {
 		fmt.Println("index:", index, "; value:", value)
+	}
+}
+
+// Test4 测试多维数组
+func Test4() {
+	arr0 := [3][2]string{
+		{"Jarvis", "v1"},
+		{"moons", "v2"},
+		{"openAI", "v3"},
+	}
+	arr1 := [3][2]string{
+		{"Jarvis", "v1"},
+	}
+
+	fmt.Println(arr0)
+	fmt.Println(arr1)
+}
+
+// Test5 测试多维数组遍历
+func Test5() {
+	arr := [3][2]string{
+		{"Jarvis", "v1"},
+		{"moons", "v2"},
+		{"openAI", "v3"},
+	}
+
+	fmt.Println(" ---- start: for 循环遍历 ---- ")
+	iterateMulArrayOfFor(arr)
+	fmt.Println(" ----  end : for 循环遍历 ---- ")
+
+	fmt.Println(" ---- start: range 循环遍历 ---- ")
+	iterateMulArrayOfRange(arr)
+	fmt.Println(" ----  end : range 循环遍历 ---- ")
+
+}
+
+// 测试 for 循环遍历多维数组
+func iterateMulArrayOfFor(arr [3][2]string) {
+	for i := 0; i < len(arr); i++ {
+		for j := 0; j < len(arr[i]); j++ {
+			fmt.Println(arr[i][j])
+		}
+	}
+}
+
+// 测试 rang 循环遍历多维数组
+func iterateMulArrayOfRange(arr [3][2]string) {
+	for index1, value1 := range arr {
+		for index2, value2 := range value1 {
+			fmt.Println("index: ", index1, "-", index2, "; value: ", value2)
+		}
 	}
 }
